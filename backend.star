@@ -37,8 +37,8 @@ def run(plan, cfg):
         "SUBNETWORK": title,
         "CHAIN_ID": str(chain_id),
         "CHAIN_TYPE": "polygon_zkevm",
-        "COIN": "ETH",
-        "ETHEREUM_JSONRPC_VARIANT": "geth",
+        "COIN": "XME",
+        "ETHEREUM_JSONRPC_VARIANT": "erigon",
         "ETHEREUM_JSONRPC_HTTP_URL": rpc_url,
         "ETHEREUM_JSONRPC_TRACE_URL": trace_url,
         "ETHEREUM_JSONRPC_WS_URL": ws_url,
@@ -56,6 +56,7 @@ def run(plan, cfg):
         "BLOCKSCOUT_PROTOCOL": "http",
         "INDEXER_POLYGON_ZKEVM_BATCHES_ENABLED": "true",
         "BRIDGED_TOKENS_ENABLED": "true",
+        "ETH_JSON_RPC_MAX_BATCH_SIZE":"100",
     }
     if l1_rpc_url:
         env_vars["INDEXER_POLYGON_ZKEVM_L1_RPC"] = l1_rpc_url
