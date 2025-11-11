@@ -38,7 +38,7 @@ def run(plan, cfg):
         "CHAIN_ID": str(chain_id),
         "CHAIN_TYPE": "polygon_zkevm",
         "COIN": "XME",
-        "ETHEREUM_JSONRPC_VARIANT": "erigon",
+        "ETHEREUM_JSONRPC_VARIANT": "geth",
         "ETHEREUM_JSONRPC_HTTP_URL": rpc_url,
         "ETHEREUM_JSONRPC_TRACE_URL": trace_url,
         "ETHEREUM_JSONRPC_WS_URL": ws_url,
